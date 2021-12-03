@@ -1,4 +1,4 @@
-def gv
+def gvy
 
 pipeline {
     agent any
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     echo "building jar"
-                    //gvy.buildJar()
+                    gvy.buildJar()
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                     echo "deploying"
-                    //gvy.deployApp()
+                    gvy.deployApp()
                 }
             }
         }

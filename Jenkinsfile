@@ -6,7 +6,7 @@ pipeline {
         stage("init") {
             steps {
                 script {
-                    gv = load "script.groovy"
+                    gvy = load "script.groovy"
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     echo "building jar"
-                    //gv.buildJar()
+                    //gvy.buildJar()
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     echo "building image"
-                    //gv.buildImage()
+                    //gvy.buildImage()
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                     echo "deploying"
-                    //gv.deployApp()
+                    //gvy.deployApp()
                 }
             }
         }
